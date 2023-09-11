@@ -1,0 +1,21 @@
+<div id="company-management">
+    <!-- List of referral companies -->
+    <ul id="company-list"></ul>
+
+    <!-- Form to add a new company -->
+    <form id="add-company-form">
+        <input type="text" id="company-name" placeholder="Company Name" />
+        <button type="submit">Add Company</button>
+    </form>
+</div>
+
+<div id="case-management">
+    <!-- List of cases -->
+    <ul id="case-list"></ul>
+
+    <!-- Form to add a new case -->
+    <form id="add-case-form">
+        <input type="text" id="case-title" placeholder="Case Title" />
+        <button type="submit">Add Case</button>
+    </form>
+</div>
