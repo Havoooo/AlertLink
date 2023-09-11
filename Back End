@@ -1,0 +1,18 @@
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/api/companies', (req, res) => {
+    // Implement logic to retrieve a list of referral companies from the database
+    const companies = getCompanies();
+    res.json(companies);
+});
+
+app.post('/api/companies', (req, res) => {
+    // Implement logic to add a new referral company to the database
+    const newCompany = req.body;
+    addCompany(newCompany);
+    res.sendStatus(201);
+});
+
+// ...similar endpoints for cases and messaging...
