@@ -1,0 +1,12 @@
+const socket = new WebSocket('ws://your-server-url');
+
+socket.addEventListener('message', (event) => {
+    // Handle incoming messages and display them in the UI
+    const message = JSON.parse(event.data);
+    displayMessage(message);
+});
+
+// Function to send a message
+function sendMessage(message) {
+    socket.send(JSON.stringify(message));
+}
